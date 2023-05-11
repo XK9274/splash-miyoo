@@ -17,6 +17,10 @@ sleep 2
 killall -9 splash
 ```
 
+# Example splash:
+
+![ncspot_001](https://github.com/XK9274/splash-miyoo/assets/47260768/5e864a10-556f-465c-9f40-4c230e52a33e)
+
 # Usage 
 `/mnt/SDCARD/App/Spotify/splash /mnt/SDCARD/App/Spotify/logos/splash.png &`
 
