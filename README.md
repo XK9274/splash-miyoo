@@ -8,7 +8,8 @@ Will only display when sent a sigint.. not sure if it's mainui related
 
 Example to start the splash:
 
-```/mnt/SDCARD/App/Spotify/splash /mnt/SDCARD/App/Spotify/logos/splash.png 80 80 80 &
+```
+/mnt/SDCARD/App/Spotify/splash /mnt/SDCARD/App/Spotify/logos/splash.png 80 80 80 &
 splash_pid=$!
 sleep 1
 kill -2 $splash_pid
