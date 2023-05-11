@@ -2,13 +2,20 @@
 #include "SDL/SDL_image.h"
 #include "SDL/SDL_rotozoom.h"
 
+#include "SDL/SDL.h"
+#include "SDL/SDL_image.h"
+#include "SDL/SDL_rotozoom.h"
+
 int main(int argc, char* argv[]) {
-    if (argc < 2) {
-        printf("Please specify an image file\n");
+    if (argc < 5) {
+        printf("Usage: %s <image_file> <red> <green> <blue>\n", argv[0]);
         return 1;
     }
-    
+
     const char* image_path = argv[1];
+    int red = atoi(argv[2]);
+    int green = atoi(argv[3]);
+    int blue = atoi(argv[4]);
 
     // Initialize SDL
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
@@ -29,8 +36,11 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // Fill screen with dark grey color
-    SDL_FillRect(screen, NULL, SDL_MapRGB(screen->format, 80, 80, 80));
+    // Fill screen with specified background color
+    SDL_FillRect(screen, NULL, SDL_MapRGB(screen->format, red, green, blue));
+
+    // Update the screen
+    SDL_UpdateRect(screen, 0, 0, 0, 0);
 
     // Load image
     SDL_Surface* loadedImage = IMG_Load(image_path);
