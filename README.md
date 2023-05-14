@@ -1,5 +1,5 @@
 # splash-miyoo
-Launches a splash screen with an icon provided as an arg
+Launches a (currently basic) splash screen with an icon provided as an arg
 
 Will display a fullscreen splash
 
