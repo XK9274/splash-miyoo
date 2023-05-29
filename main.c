@@ -2,10 +2,6 @@
 #include "SDL/SDL_image.h"
 #include "SDL/SDL_rotozoom.h"
 
-#include "SDL/SDL.h"
-#include "SDL/SDL_image.h"
-#include "SDL/SDL_rotozoom.h"
-
 int main(int argc, char* argv[]) {
     if (argc < 5) {
         printf("Usage: %s <image_file> <red> <green> <blue>\n", argv[0]);
