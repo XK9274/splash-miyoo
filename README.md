@@ -30,4 +30,5 @@ syntax: imagepath r g b
 
 ![ncspot_001](https://github.com/XK9274/splash-miyoo/assets/47260768/5e864a10-556f-465c-9f40-4c230e52a33e)
 
+![Syncthing_001](https://github.com/XK9274/splash-miyoo/assets/47260768/25cabb2e-bd89-4ff5-b083-e827ea1e9b61)
 
