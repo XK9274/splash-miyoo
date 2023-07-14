@@ -1,7 +1,7 @@
 # splash-miyoo
 Launches a (currently basic) splash screen with an icon provided as an arg
 
-Will display a fullscreen splash
+Will display a fullscreen splash with an image in the center supplied on the cmdline and a background colour of your choice
 
 # Issues
 Will only display when sent a sigint.. not sure if it's mainui related
@@ -18,7 +18,7 @@ killall -9 splash
 ```
 
 # Usage 
-`/mnt/SDCARD/App/Spotify/splash /mnt/SDCARD/App/Spotify/logos/splash.png &`
+`/mnt/SDCARD/App/Spotify/splash /mnt/SDCARD/App/Spotify/logos/splash.png 240 240 240 &`
 
 `./splash /path/to/img.png 90 90 90 &`
 
